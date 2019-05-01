@@ -11,7 +11,7 @@ function nowServing(katzDeliLine) {
         string = "Currently serving" + " " + katzDeliLine[0] + ".";
         katzDeliLine.shift();
         array = katzDeliLine;
-        return string, array;
+        return string;
 
     }
 }
