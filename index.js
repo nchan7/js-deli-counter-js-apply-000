@@ -3,11 +3,15 @@ function takeANumber(line,name) {
     return "Welcome," + " " + name + ". " + "You are number " + line.length + " in line."
 }
 function nowServing(katzDeliLine) {
+    var string = "";
+    var array = [];
     if (katzDeliLine.length < 1) {
         return "There is nobody waiting to be served!"
     } else {
+        string = "Currently serving" + " " + katzDeliLine[0] + ".";
         katzDeliLine.shift();
-        return ["Currently serving" + " " + katzDeliLine[0] + ".", console.log(katzDeliLine)];
+        array = katzDeliLine;
+        return [string, array];
 
     }
 }
